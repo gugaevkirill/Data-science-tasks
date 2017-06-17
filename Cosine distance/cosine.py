@@ -57,7 +57,7 @@ class Cosinusator:
     @staticmethod
     def write_output(ans: List[int], filename: str) -> None:
         file = open(filename, 'w')
-        file.write(' '.join([str(i) for i in ans]))
+        file.write(' '.join([str(i + 1) for i in ans]))
         file.close()
 
 
